@@ -908,7 +908,7 @@ namespace GraphX.PCL.Logic.Algorithms.EdgeRouting
 
         private float _straightening = 0.15f;
 
-        private readonly Semaphore _sem = new Semaphore(0, Int32.MaxValue);
+        private readonly GraphX.PCL.Common.Models.Semaphore.Semaphore _sem = new GraphX.PCL.Common.Models.Semaphore.Semaphore(0, Int32.MaxValue);
         
         /// <summary>
         /// Gets or sets the number of subdivision points each edge should have.

@@ -30,7 +30,7 @@ namespace GraphX.PCL.Common.Models.Semaphore
         protected override void OnSuccessfullWait()
         {
             var res = Interlocked.Decrement(ref _count);
-            Debug.Assert(res >= 0, "The decremented value should be always >= 0.");
+            //Debug.Assert(res >= 0, "The decremented value should be always >= 0.");
             if (res > 0)
                 _ewh.Set();
         }

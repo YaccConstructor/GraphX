@@ -137,7 +137,7 @@ namespace GraphX.PCL.Logic.Algorithms.LayoutAlgorithms.Grouped
 
         private static TGraph GenerateGroupGraph(ICollection<TVertex> vertices, ICollection<TEdge> edges)
         {
-            var graph = new BidirectionalGraph<TVertex, TEdge>(true, vertices.Count, edges.Count);
+            var graph = new BidirectionalGraph<TVertex, TEdge>(true, vertices.Count);
             graph.AddVertexRange(vertices);
             graph.AddEdgeRange(edges);
             return (TGraph)(object)graph;
