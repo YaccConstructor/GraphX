@@ -1,0 +1,8 @@
+source C:\Users\Eugene\Source\Repos\DotParser\bin\DotParser
+source https://api.nuget.org/v3/index.json
+
+nuget Accordion
+nuget AvalonEdit
+nuget NuGet.CommandLine
+nuget YAXLib
+nuget YC.QuickGraph
